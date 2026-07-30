@@ -1,0 +1,6 @@
+{
+  "name": "Indian RO Purifier Sales & Services",
+  "description": "Premium Indian RO Water Purifier sales, service, installation, AMC plans, and repair website.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

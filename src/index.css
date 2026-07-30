@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #EAF9FF;
+    color: #1a3a4a;
+  }
+  
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Montserrat', sans-serif;
+    color: #0a2e3f;
+  }
+}
+
+@keyframes waterRipple {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 174, 239, 0.4);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 20px rgba(0, 174, 239, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 174, 239, 0);
+  }
+}
+
+@keyframes floatWater {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+}
+
+@keyframes waveMove {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-water-ripple {
+  animation: waterRipple 3s infinite ease-in-out;
+}
+
+.animate-float {
+  animation: floatWater 5s ease-in-out infinite;
+}
+
+.animate-wave {
+  animation: waveMove 12s ease-in-out infinite;
+}
+
+/* Frosted Glass Background Utility */
+.frosted-bg {
+  background-color: #EAF9FF;
+  background-image: radial-gradient(circle at 10% 20%, rgba(79, 195, 247, 0.4) 0%, transparent 45%), radial-gradient(circle at 90% 80%, rgba(0, 174, 239, 0.3) 0%, transparent 45%);
+}
+
+/* Glassmorphism card utilities */
+.glass-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 10px 30px -10px rgba(0, 174, 239, 0.12), inset 0 1px 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.glass-card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-hover:hover {
+  background: rgba(255, 255, 255, 0.85);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -15px rgba(0, 174, 239, 0.22), inset 0 1px 1px 0 rgba(255, 255, 255, 1);
+  border-color: rgba(255, 255, 255, 0.95);
+}
+
+.glass-dark-card {
+  background: rgba(10, 46, 63, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 40px -15px rgba(10, 46, 63, 0.4);
+}
+
+.glass-header {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 20px -5px rgba(0, 174, 239, 0.08);
+}
+
+.btn-sky-gradient {
+  background: linear-gradient(135deg, #00AEEF 0%, #4FC3F7 100%);
+  color: #ffffff;
+  border-radius: 9999px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 20px -4px rgba(0, 174, 239, 0.4);
+}
+
+.btn-sky-gradient:hover {
+  background: linear-gradient(135deg, #0096ce 0%, #00AEEF 100%);
+  box-shadow: 0 12px 25px -4px rgba(0, 174, 239, 0.55);
+  transform: translateY(-2px);
+}
+
+.btn-sky-outline {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #00AEEF;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 174, 239, 0.1);
+}
+
+.btn-sky-outline:hover {
+  background: #00AEEF;
+  color: #ffffff;
+  border-color: #00AEEF;
+  box-shadow: 0 8px 20px rgba(0, 174, 239, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #EAF9FF;
+}
+::-webkit-scrollbar-thumb {
+  background: #00AEEF;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0077B6;
+}
+
+
