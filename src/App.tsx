@@ -16,10 +16,14 @@ import { FloatingButtons } from './components/FloatingButtons';
 import { BookServiceModal } from './components/BookServiceModal';
 import { ProductDetailModal } from './components/ProductDetailModal';
 import { AdminPanelModal } from './components/AdminPanelModal';
+import { ScrollWaterBubbles } from './components/ScrollWaterBubbles';
 
 function AppContent() {
   return (
-    <div className="min-h-screen flex flex-col bg-[#EAF9FF]/40 text-slate-800 selection:bg-[#00AEEF] selection:text-white">
+    <div className="min-h-screen flex flex-col bg-[#EAF9FF]/40 text-slate-800 selection:bg-[#00AEEF] selection:text-white relative">
+      {/* Scroll Water Bubbles Effect */}
+      <ScrollWaterBubbles />
+
       {/* Sticky Header */}
       <Navbar />
 
