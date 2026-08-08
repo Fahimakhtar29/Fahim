@@ -39,7 +39,7 @@ export const TestimonialsSection: React.FC = () => {
             What Our Verified Customers Say
           </h2>
           <p className="text-sm sm:text-base text-slate-600">
-            Over 15,000+ satisfied families across India trust us for pure, healthy water every single day.
+            Over 15,000+ satisfied families across Lucknow trust us for pure, healthy water every single day.
           </p>
         </div>
 

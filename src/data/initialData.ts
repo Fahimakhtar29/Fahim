@@ -438,7 +438,7 @@ export const initialTestimonials: Testimonial[] = [
   {
     id: "test-1",
     customerName: "Rajesh Sharma",
-    location: "Dwarka, New Delhi",
+    location: "Gomti Nagar, Lucknow",
     rating: 5,
     reviewText: "Outstanding service! Called them at 10 AM for Kent RO membrane replacement and technician Ramesh reached by 11:30 AM. Genuine parts used and TDS dropped from 850 to 90 PPM. Highly recommended!",
     verifiedBuyer: true,
@@ -448,7 +448,7 @@ export const initialTestimonials: Testimonial[] = [
   {
     id: "test-2",
     customerName: "Priya Venkatesh",
-    location: "Koramangala, Bengaluru",
+    location: "Hazratganj, Lucknow",
     rating: 5,
     reviewText: "Took their Platinum AMC Plan for our Aquaguard RO. They perform regular scheduled servicing automatically without even calling. Zero extra charges when pump adapter burnt out. Very professional company!",
     verifiedBuyer: true,
@@ -458,7 +458,7 @@ export const initialTestimonials: Testimonial[] = [
   {
     id: "test-3",
     customerName: "Sanjay Patel",
-    location: "SG Highway, Ahmedabad",
+    location: "Aliganj, Lucknow",
     rating: 5,
     reviewText: "Bought the AquaPure Grand Copper RO from Indian RO Purifier. Water taste is incredibly sweet and alkaline. Installation was completely free and done within 3 hours of order. 10/10 service!",
     verifiedBuyer: true,
@@ -468,7 +468,7 @@ export const initialTestimonials: Testimonial[] = [
   {
     id: "test-4",
     customerName: "Ananya Kulkarni",
-    location: "Viman Nagar, Pune",
+    location: "Indira Nagar, Lucknow",
     rating: 5,
     reviewText: "Installed 50 LPH Commercial RO plant for our IT office cafeteria. Excellent build quality, stainless steel frame, and crystal clear water output. Great job by the technical team!",
     verifiedBuyer: true,
@@ -478,9 +478,9 @@ export const initialTestimonials: Testimonial[] = [
   {
     id: "test-5",
     customerName: "Vikram Singh Rathore",
-    location: "Vaishali Nagar, Jaipur",
+    location: "Mahanagar, Lucknow",
     rating: 5,
-    reviewText: "Best RO service in Jaipur! They checked TDS right in front of me with digital meter before and after service. Very polite behavior and reasonable price.",
+    reviewText: "Best RO service in Lucknow! They checked TDS right in front of me with digital meter before and after service. Very polite behavior and reasonable price.",
     verifiedBuyer: true,
     date: "15 February 2026",
     serviceUsed: "RO Servicing & TDS Adjustment"
@@ -488,7 +488,7 @@ export const initialTestimonials: Testimonial[] = [
   {
     id: "test-6",
     customerName: "Meenakshi Sundaram",
-    location: "Andheri West, Mumbai",
+    location: "Ashiyana, Lucknow",
     rating: 5,
     reviewText: "Water quality in our building was making kids sick due to high chlorine. Called Indian RO Purifier for filter change. Problem resolved immediately. Very satisfied customer!",
     verifiedBuyer: true,
