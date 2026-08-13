@@ -89,6 +89,16 @@ export interface ServiceBooking {
   createdAt: string;
 }
 
+export interface LucknowServiceArea {
+  id: string;
+  name: string;
+  pincode: string;
+  tag: string;
+  description: string;
+  popularServices: string[];
+  responseEstimate: string;
+}
+
 export interface SiteConfig {
   companyName: string;
   phone: string;

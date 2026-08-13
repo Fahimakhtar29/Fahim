@@ -38,7 +38,7 @@ export const BookServiceModal: React.FC = () => {
       customerName: formData.name,
       phone: formData.phone,
       email: formData.email,
-      city: formData.city || 'New Delhi',
+      city: formData.city || 'Gomti Nagar, Lucknow',
       address: formData.address || 'Address provided on call',
       serviceType: formData.serviceType,
       preferredDate: formData.preferredDate || new Date().toISOString().split('T')[0],
@@ -207,15 +207,31 @@ export const BookServiceModal: React.FC = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-xs font-bold text-slate-700 mb-1">
-                    City / Area
+                    Select Lucknow Area / City
                   </label>
-                  <input
-                    type="text"
-                    placeholder="e.g. Dwarka, New Delhi"
-                    value={formData.city}
+                  <select
+                    value={formData.city || 'Lucknow'}
                     onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                    className="w-full bg-slate-50 border border-sky-200 rounded-xl px-3 py-2 text-xs focus:outline-hidden focus:ring-2 focus:ring-[#00AEEF] focus:bg-white"
-                  />
+                    className="w-full bg-slate-50 border border-sky-200 rounded-xl px-3 py-2 text-xs focus:outline-hidden focus:ring-2 focus:ring-[#00AEEF] focus:bg-white font-medium text-slate-800"
+                  >
+                    <option value="Gomti Nagar, Lucknow">Gomti Nagar, Lucknow</option>
+                    <option value="Hazratganj, Lucknow">Hazratganj, Lucknow</option>
+                    <option value="Aliganj, Lucknow">Aliganj, Lucknow</option>
+                    <option value="Indira Nagar, Lucknow">Indira Nagar, Lucknow</option>
+                    <option value="Mahanagar, Lucknow">Mahanagar, Lucknow</option>
+                    <option value="Ashiyana, Lucknow">Ashiyana, Lucknow</option>
+                    <option value="Rajajipuram, Lucknow">Rajajipuram, Lucknow</option>
+                    <option value="Jankipuram, Lucknow">Jankipuram, Lucknow</option>
+                    <option value="Vikas Nagar, Lucknow">Vikas Nagar, Lucknow</option>
+                    <option value="Chowk, Lucknow">Chowk, Lucknow</option>
+                    <option value="Transport Nagar / Kanpur Road, Lucknow">Transport Nagar, Lucknow</option>
+                    <option value="Charbagh, Lucknow">Charbagh, Lucknow</option>
+                    <option value="Sushant Golf City, Lucknow">Sushant Golf City, Lucknow</option>
+                    <option value="Vrindavan Yojna, Lucknow">Vrindavan Yojna, Lucknow</option>
+                    <option value="Chinhat / BBD Area, Lucknow">Chinhat / BBD, Lucknow</option>
+                    <option value="Behta / Palka Chauraha, Lucknow">Behta / Palka Chauraha (HQ)</option>
+                    <option value="Other Lucknow Locality">Other Lucknow Area</option>
+                  </select>
                 </div>
 
                 <div>
@@ -226,7 +242,7 @@ export const BookServiceModal: React.FC = () => {
                     <MapPin className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
                     <input
                       type="text"
-                      placeholder="House/Flat No, Street"
+                      placeholder="House/Flat No, Landmark"
                       value={formData.address}
                       onChange={(e) => setFormData({ ...formData, address: e.target.value })}
                       className="w-full bg-slate-50 border border-sky-200 rounded-xl pl-9 pr-3 py-2 text-xs focus:outline-hidden focus:ring-2 focus:ring-[#00AEEF] focus:bg-white"

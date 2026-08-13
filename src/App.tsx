@@ -4,6 +4,7 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { WhyChooseUs } from './components/WhyChooseUs';
 import { ServicesSection } from './components/ServicesSection';
+import { ServiceLocationsSection } from './components/ServiceLocationsSection';
 import { ProductsSection } from './components/ProductsSection';
 import { AMCSection } from './components/AMCSection';
 import { WhyROSection } from './components/WhyROSection';
@@ -28,6 +29,7 @@ function AppContent() {
         <Hero />
         <WhyChooseUs />
         <ServicesSection />
+        <ServiceLocationsSection />
         <ProductsSection />
         <AMCSection />
         <WhyROSection />

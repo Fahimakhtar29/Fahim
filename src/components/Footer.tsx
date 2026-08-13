@@ -142,6 +142,31 @@ export const Footer: React.FC = () => {
 
         </div>
 
+        {/* Lucknow Service Hubs Bar */}
+        <div className="py-6 border-b border-white/10 space-y-3">
+          <div className="flex items-center gap-2">
+            <MapPin className="w-4 h-4 text-[#4FC3F7]" />
+            <h4 className="font-heading font-bold text-xs uppercase tracking-wider text-white">
+              Top 15 Popular Lucknow Service Hubs (Doorstep RO Service in 30 Mins):
+            </h4>
+          </div>
+          <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-300">
+            {[
+              "Gomti Nagar", "Hazratganj", "Aliganj", "Indira Nagar", "Mahanagar",
+              "Ashiyana", "Rajajipuram", "Jankipuram", "Vikas Nagar", "Chowk",
+              "Transport Nagar", "Charbagh", "Sushant Golf City", "Vrindavan Yojna", "Chinhat / BBD Area", "Behta / Palka Chauraha"
+            ].map((areaName, aIdx) => (
+              <a
+                key={aIdx}
+                href="#service-areas"
+                className="bg-white/5 hover:bg-[#00AEEF] hover:text-white px-2.5 py-1 rounded-lg border border-white/10 transition-all text-slate-300"
+              >
+                RO Service in {areaName}
+              </a>
+            ))}
+          </div>
+        </div>
+
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p>

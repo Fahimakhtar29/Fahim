@@ -1,4 +1,4 @@
-import { Product, ServiceItem, AMCPlan, WhyChooseUsItem, PurificationStep, Testimonial, FAQ, SiteConfig } from '../types';
+import { Product, ServiceItem, AMCPlan, WhyChooseUsItem, PurificationStep, Testimonial, FAQ, SiteConfig, LucknowServiceArea } from '../types';
 
 export const initialSiteConfig: SiteConfig = {
   companyName: "Indian RO Purifier Sales & Services",
@@ -589,3 +589,151 @@ export const initialFAQs: FAQ[] = [
     answer: "We accept Cash on Delivery, UPI (GPay, PhonePe, Paytm), Credit/Debit Cards, Net Banking, and zero-cost EMI options for new purifiers."
   }
 ];
+
+export const lucknowServiceAreas: LucknowServiceArea[] = [
+  {
+    id: "loc-1",
+    name: "Gomti Nagar",
+    pincode: "226010",
+    tag: "Express 30-Min Hub",
+    description: "Covering Gomti Nagar Extension, Patrakarpuram, Vibhuti Khand, Malhaur & Summit Building area.",
+    popularServices: ["Kent & Aquaguard Repair", "Filter Change", "Alkaline RO Sales"],
+    responseEstimate: "20-30 Mins"
+  },
+  {
+    id: "loc-2",
+    name: "Hazratganj",
+    pincode: "226001",
+    tag: "Central Lucknow",
+    description: "Covering Ganj Market, Park Road, MG Marg, Lalbagh, Naval Kishore Road & Butler Colony.",
+    popularServices: ["Urgent RO Repair", "Membrane Change", "Corporate AMC"],
+    responseEstimate: "20-30 Mins"
+  },
+  {
+    id: "loc-3",
+    name: "Aliganj",
+    pincode: "226024",
+    tag: "High Demand Zone",
+    description: "Covering Sector A to O, Purania Chauraha, Engineering College Road & Kendriya Bhawan.",
+    popularServices: ["Domestic RO Servicing", "UV Tube Change", "Copper RO Installation"],
+    responseEstimate: "30 Mins"
+  },
+  {
+    id: "loc-4",
+    name: "Indira Nagar",
+    pincode: "226016",
+    tag: "Top Rated Hub",
+    description: "Covering Munshi Pulia, Bhoothnath Market, Lekhraj, Shalimar Garden & Sectors 1 to 25.",
+    popularServices: ["Filter Replacement", "24x7 Emergency Repair", "TDS Calibration"],
+    responseEstimate: "30-45 Mins"
+  },
+  {
+    id: "loc-5",
+    name: "Mahanagar",
+    pincode: "226006",
+    tag: "Fast Technician Visit",
+    description: "Covering Gol Market, Kapoorthala, Badshahnagar, Nishatganj & PAC Road.",
+    popularServices: ["Copper RO Sales", "Annual Maintenance (AMC)", "RO Leakage Repair"],
+    responseEstimate: "25-35 Mins"
+  },
+  {
+    id: "loc-6",
+    name: "Ashiyana",
+    pincode: "226012",
+    tag: "Doorstep Service",
+    description: "Covering Sectors N, M, K, L, Power House Chauraha, Bangla Bazar & LDA Colony.",
+    popularServices: ["Quick RO Servicing", "Filter Cartridge Cleaning", "AMC Renewal"],
+    responseEstimate: "30-45 Mins"
+  },
+  {
+    id: "loc-7",
+    name: "Rajajipuram",
+    pincode: "226017",
+    tag: "Trusted Service Hub",
+    description: "Covering Blocks A to F, Talkatora Industrial Area, Meena Bakery & E-Block Market.",
+    popularServices: ["RO Motor/Pump Repair", "SMPS Adapter Change", "General Servicing"],
+    responseEstimate: "30-45 Mins"
+  },
+  {
+    id: "loc-8",
+    name: "Jankipuram",
+    pincode: "226021",
+    tag: "Quick Arrival",
+    description: "Covering Jankipuram Extension, AKTU Campus, Kursi Road, Engineering College & Sector F.",
+    popularServices: ["New RO Installation", "Commercial RO Plant", "Filter Change"],
+    responseEstimate: "30 Mins"
+  },
+  {
+    id: "loc-9",
+    name: "Vikas Nagar",
+    pincode: "226022",
+    tag: "Popular Residential Zone",
+    description: "Covering Mamu Bhanja Chauraha, Sabji Mandi, Tedhi Pulia & Ring Road Market.",
+    popularServices: ["Copper & Alkaline RO", "Membrane Flushing", "Doorstep Repair"],
+    responseEstimate: "25-35 Mins"
+  },
+  {
+    id: "loc-10",
+    name: "Chowk",
+    pincode: "226003",
+    tag: "Heritage Area Service",
+    description: "Covering Medical College, Akbari Gate, KGMU Hospital, Victoria Street & Subhash Marg.",
+    popularServices: ["Commercial RO Repair", "Domestic Filter Servicing", "Spare Parts"],
+    responseEstimate: "35-45 Mins"
+  },
+  {
+    id: "loc-11",
+    name: "Transport Nagar / Kanpur Road",
+    pincode: "226023",
+    tag: "Commercial & Domestic",
+    description: "Covering Singar Nagar, Amausi Airport Road, Krishna Nagar, Hind Nagar & RTO Zone.",
+    popularServices: ["50 LPH Commercial RO", "High TDS Purifier", "Emergency Repair"],
+    responseEstimate: "30-45 Mins"
+  },
+  {
+    id: "loc-12",
+    name: "Charbagh",
+    pincode: "226004",
+    tag: "Central Station Hub",
+    description: "Covering Railway Station Area, Naka Hindola, AP Sen Road, Huseria & Mawaiya.",
+    popularServices: ["Fast On-Call Repair", "RO Uninstallation & Shift", "UV Filter Change"],
+    responseEstimate: "25-35 Mins"
+  },
+  {
+    id: "loc-13",
+    name: "Sushant Golf City",
+    pincode: "226030",
+    tag: "Premium Township Zone",
+    description: "Covering Ansal API Township, Golf Course, Sultanpur Road, Medanta Hospital & Best Price Area.",
+    popularServices: ["High-End Alkaline RO", "Villa Purifier Installation", "Platinum AMC"],
+    responseEstimate: "30-45 Mins"
+  },
+  {
+    id: "loc-14",
+    name: "Vrindavan Yojna",
+    pincode: "226029",
+    tag: "Express AMC Zone",
+    description: "Covering Sectors 1 to 18, Raebareli Road, SGPGI Hospital Area & Telibagh.",
+    popularServices: ["SGPGI Area Doorstep RO", "Multi-Stage Filter Clean", "AMC Plans"],
+    responseEstimate: "30-45 Mins"
+  },
+  {
+    id: "loc-15",
+    name: "Chinhat / BBD Area",
+    pincode: "226028",
+    tag: "Student & Residential Hub",
+    description: "Covering Faizabad Road, BBD Green City, Kamta Chauraha, Matiyari & Satrikh Road.",
+    popularServices: ["Hostel/PG RO Servicing", "New RO Machine Sales", "Quick Filter Swap"],
+    responseEstimate: "25-35 Mins"
+  },
+  {
+    id: "loc-16",
+    name: "Behta / Palka Chauraha",
+    pincode: "226101",
+    tag: "Corporate Head Office",
+    description: "Modern HomeZ, Near Swapnlok Residency, Palka Chauraha, Behta, Lucknow (Primary HQ).",
+    popularServices: ["Central Service Center", "Direct Factory Outlet", "Instant On-Site Support"],
+    responseEstimate: "Instant / 15 Mins"
+  }
+];
+
