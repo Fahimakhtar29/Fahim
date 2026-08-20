@@ -103,10 +103,34 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Col 4: Contact & Legal */}
+          {/* Col 4: Regional Branch Offices */}
           <div className="space-y-3">
             <h4 className="font-heading font-bold text-sm uppercase tracking-wider text-[#4FC3F7]">
-              Support & Legal
+              Regional Branches
+            </h4>
+            <div className="space-y-2 text-xs text-slate-300">
+              <div className="p-2 rounded-xl bg-white/5 border border-white/10">
+                <p className="font-bold text-white">Ghosi Branch (Mau)</p>
+                <p className="text-[11px] text-slate-400">Madhuban Rd, Sadar Bazar</p>
+                <p className="text-[11px] text-[#4FC3F7]">PIN: 275304 • Doorstep Support</p>
+              </div>
+              <div className="p-2 rounded-xl bg-white/5 border border-white/10">
+                <p className="font-bold text-white">Mau Branch</p>
+                <p className="text-[11px] text-slate-400">Near Railway Station / Ghazipur Rd</p>
+                <p className="text-[11px] text-[#4FC3F7]">PIN: 275101 • 7 Days Open</p>
+              </div>
+              <div className="p-2 rounded-xl bg-white/5 border border-white/10">
+                <p className="font-bold text-white">Azamgarh Branch</p>
+                <p className="text-[11px] text-slate-400">Civil Lines / Sidhari Road</p>
+                <p className="text-[11px] text-[#4FC3F7]">PIN: 276001 • Fast Repair</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Col 5: Contact & Legal */}
+          <div className="space-y-3">
+            <h4 className="font-heading font-bold text-sm uppercase tracking-wider text-[#4FC3F7]">
+              Head Office Support
             </h4>
             <div className="space-y-2 text-xs text-slate-400">
               <a
@@ -142,17 +166,22 @@ export const Footer: React.FC = () => {
 
         </div>
 
-        {/* Lucknow Service Hubs Bar */}
+        {/* Lucknow & Branch Service Hubs Bar */}
         <div className="py-6 border-b border-white/10 space-y-3">
-          <div className="flex items-center gap-2">
-            <MapPin className="w-4 h-4 text-[#4FC3F7]" />
-            <h4 className="font-heading font-bold text-xs uppercase tracking-wider text-white">
-              Top 15 Popular Lucknow Service Hubs (Doorstep RO Service in 30 Mins):
-            </h4>
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div className="flex items-center gap-2">
+              <MapPin className="w-4 h-4 text-[#4FC3F7]" />
+              <h4 className="font-heading font-bold text-xs uppercase tracking-wider text-white">
+                Service Hubs & Branches:
+              </h4>
+            </div>
+            <span className="text-[11px] text-[#4FC3F7] font-semibold">
+              Lucknow HQ • Ghosi • Mau • Azamgarh
+            </span>
           </div>
           <div className="flex flex-wrap gap-1.5 text-[11px] text-slate-300">
             {[
-              "Gomti Nagar", "Hazratganj", "Aliganj", "Indira Nagar", "Mahanagar",
+              "Ghosi Branch (Mau)", "Mau Nath Bhanjan", "Azamgarh Division Hub", "Gomti Nagar", "Hazratganj", "Aliganj", "Indira Nagar", "Mahanagar",
               "Ashiyana", "Rajajipuram", "Jankipuram", "Vikas Nagar", "Chowk",
               "Transport Nagar", "Charbagh", "Sushant Golf City", "Vrindavan Yojna", "Chinhat / BBD Area", "Behta / Palka Chauraha"
             ].map((areaName, aIdx) => (
@@ -161,7 +190,7 @@ export const Footer: React.FC = () => {
                 href="#service-areas"
                 className="bg-white/5 hover:bg-[#00AEEF] hover:text-white px-2.5 py-1 rounded-lg border border-white/10 transition-all text-slate-300"
               >
-                RO Service in {areaName}
+                {areaName}
               </a>
             ))}
           </div>

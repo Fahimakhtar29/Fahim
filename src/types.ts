@@ -99,6 +99,22 @@ export interface LucknowServiceArea {
   responseEstimate: string;
 }
 
+export interface BranchOffice {
+  id: string;
+  city: string;
+  district: string;
+  branchName: string;
+  address: string;
+  pincode: string;
+  phone: string;
+  email?: string;
+  type: 'Headquarters' | 'Branch Office' | 'Regional Hub';
+  timing: string;
+  coverageAreas: string[];
+  features: string[];
+  mapEmbedQuery: string;
+}
+
 export interface SiteConfig {
   companyName: string;
   phone: string;

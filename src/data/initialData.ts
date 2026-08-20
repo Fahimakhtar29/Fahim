@@ -1,4 +1,4 @@
-import { Product, ServiceItem, AMCPlan, WhyChooseUsItem, PurificationStep, Testimonial, FAQ, SiteConfig, LucknowServiceArea } from '../types';
+import { Product, ServiceItem, AMCPlan, WhyChooseUsItem, PurificationStep, Testimonial, FAQ, SiteConfig, LucknowServiceArea, BranchOffice } from '../types';
 
 export const initialSiteConfig: SiteConfig = {
   companyName: "Indian RO Purifier Sales & Services",
@@ -8,7 +8,7 @@ export const initialSiteConfig: SiteConfig = {
   address: "Modern HomeZ, Near Swapnlok Residency, Palka Chauraha, Behta, Lucknow",
   businessHours: "Mon - Sun: 8:00 AM - 9:00 PM (365 Days Open)",
   heroHeading: "Pure Water. Healthy Family.",
-  heroSubheading: "Complete RO Sales, Service, Installation, Repair & AMC under one roof across India.",
+  heroSubheading: "Complete RO Sales, Service, Installation, Repair & AMC across Lucknow, Ghosi, Mau & Azamgarh.",
   heroCustomImage: "https://lh3.googleusercontent.com/d/1zZK5my6lBjJXsKYzkJcipXksMKwtO5NW"
 };
 
@@ -736,4 +736,127 @@ export const lucknowServiceAreas: LucknowServiceArea[] = [
     responseEstimate: "Instant / 15 Mins"
   }
 ];
+
+export const branchOffices: BranchOffice[] = [
+  {
+    id: "branch-ghosi",
+    city: "Ghosi",
+    district: "Mau District",
+    branchName: "Ghosi Branch & Regional Distribution Hub",
+    address: "Near Madhuban Mod, Sadar Market, Ghosi, Mau, Uttar Pradesh",
+    pincode: "275304",
+    phone: "+91 8417985679",
+    email: "indianenterprisesghosi@gmail.com",
+    type: "Branch Office",
+    timing: "8:00 AM - 8:30 PM (7 Days Open)",
+    coverageAreas: [
+      "Ghosi Town",
+      "Madhuban Road",
+      "Kopaganj",
+      "Dohrighat",
+      "Amila",
+      "Bojh Chauraha",
+      "Nadwa Sarai",
+      "Sipah",
+      "Surrounding Rural & Urban Hubs"
+    ],
+    features: [
+      "On-Demand Doorstep Technician",
+      "Genuine Kent & Aquaguard Spares",
+      "Domestic & Commercial RO Installation",
+      "High TDS Ground Water Softeners"
+    ],
+    mapEmbedQuery: "Ghosi, Mau, Uttar Pradesh 275304"
+  },
+  {
+    id: "branch-mau",
+    city: "Mau",
+    district: "Mau Nath Bhanjan",
+    branchName: "Mau District Main Branch & Service Center",
+    address: "Sahadatpura, Near Ghazipur Tiraha / Bramhasthan, Mau, Uttar Pradesh",
+    pincode: "275101",
+    phone: "+91 8417985679",
+    email: "indianenterprisesghosi@gmail.com",
+    type: "Branch Office",
+    timing: "8:00 AM - 8:30 PM (7 Days Open)",
+    coverageAreas: [
+      "Sahadatpura",
+      "Bramhasthan",
+      "Ballia Mod",
+      "Muhammadabad Gohna",
+      "Chiraiyakot",
+      "Pardaha",
+      "Ghosi Road Mau",
+      "Mau Railway Junction Area"
+    ],
+    features: [
+      "Same-Day RO Repair & Filter Change",
+      "Annual AMC Maintenance Contracts",
+      "Industrial / Commercial 50-1000 LPH RO",
+      "Copper & Alkaline Upgrades"
+    ],
+    mapEmbedQuery: "Sahadatpura, Mau, Uttar Pradesh 275101"
+  },
+  {
+    id: "branch-azamgarh",
+    city: "Azamgarh",
+    district: "Azamgarh Division",
+    branchName: "Azamgarh Division Branch & Service Center",
+    address: "Civil Lines, Near Sidhari Overbridge / Bilariyaganj Road, Azamgarh, Uttar Pradesh",
+    pincode: "276001",
+    phone: "+91 8417985679",
+    email: "indianenterprisesghosi@gmail.com",
+    type: "Regional Hub",
+    timing: "8:00 AM - 8:30 PM (7 Days Open)",
+    coverageAreas: [
+      "Civil Lines Azamgarh",
+      "Sidhari",
+      "Bilariyaganj",
+      "Mubarakpur",
+      "Phoolpur",
+      "Lalganj",
+      "Rani Ki Sarai",
+      "Mehnagar",
+      "Sagri / Jiyanpur"
+    ],
+    features: [
+      "Fast 45-Min Doorstep Dispatch",
+      "Free Water TDS Testing & Consultation",
+      "Multi-Brand RO Repair & Servicing",
+      "Factory Direct RO Purifier Sales"
+    ],
+    mapEmbedQuery: "Civil Lines, Azamgarh, Uttar Pradesh 276001"
+  },
+  {
+    id: "branch-lucknow",
+    city: "Lucknow",
+    district: "Lucknow HQ",
+    branchName: "Lucknow Corporate Head Office & Main Hub",
+    address: "Modern HomeZ, Near Swapnlok Residency, Palka Chauraha, Behta, Lucknow, Uttar Pradesh",
+    pincode: "226101",
+    phone: "+91 8417985679",
+    email: "indianenterprisesghosi@gmail.com",
+    type: "Headquarters",
+    timing: "8:00 AM - 9:00 PM (365 Days Open)",
+    coverageAreas: [
+      "Gomti Nagar",
+      "Hazratganj",
+      "Aliganj",
+      "Indira Nagar",
+      "Mahanagar",
+      "Ashiyana",
+      "Rajajipuram",
+      "Jankipuram",
+      "All 15+ Lucknow Zones"
+    ],
+    features: [
+      "State Corporate Headquarters",
+      "30-Min Rapid Response Vans",
+      "Central Spare Parts Depot",
+      "Corporate & Institutional AMC Management"
+    ],
+    mapEmbedQuery: "Modern HomeZ, Behta, Lucknow, Uttar Pradesh 226101"
+  }
+];
+
 
